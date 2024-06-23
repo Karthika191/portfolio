@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Karthika</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        
+        main {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        .profile {
+            flex: 1;
+            max-width: 500px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .profile img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+        }
+        .description {
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 18px;
+            line-height: 1.8;
+            color: #333;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .description h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .description p {
+            margin-bottom: 10px;
+        }
+        .social, .hire-me {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .social a, .hire-me button {
+            display: inline-block;
+            margin-bottom: 10px;
+            color: #333;
+            text-decoration: none;
+            padding: 10px 20px;
+            border: 1px solid #333;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .social a:hover, .hire-me button:hover {
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Karthika</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutme.html">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="academics.html">Academics</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="profile">
+            <img src="image1.png" alt="karthika">
+        </div>
+        <div class="profile">
+            <div class="description">
+                <h2>Hi, I am Karthika</h2>
+                <p>I am a student pursuing MCA at Kongu Engineering College.</p>
+                <p>I am fond of creating websites.</p>
+                <div class="social">
+                    <a href="https://www.linkedin.com/in/karthika-r-t-5a7253248/" target="_blank">LinkedIn</a>
+                </div>
+                <div class="hire-me">
+                    <button onclick="notifyUser()">Hire Me</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        function notifyUser() {
+            alert('Thank you for your interest! We will get back to you soon.');
+        }
+    </script>
+</body>
+</html>
